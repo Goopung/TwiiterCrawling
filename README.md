@@ -21,14 +21,14 @@ driver.get("https://x.com")
 ```
 后，手动完成 **X（Twitter）** 的登录。
 
-### 3. 保存 Cookies
-登录后，运行此单元格获取 **Cookies** 并保存，下次直接使用cookies即可跳过登录界面：
+### 3. 保存小饼干
+登录后，运行此单元格获取 **Cookies** 并保存，下次直接使用小饼干即可跳过登录界面：
 ```python
 cookies = driver.get_cookies()
 with open("twitter_cookies.pkl", "wb") as file:
     pickle.dump(cookies, file)
 ```
-这样，下次运行时可以直接加载 **Cookies**，无需重复登录。
+这样，下次运行时可以直接加载小饼干，无需重复登录。
 
 ### 4. 配置爬取参数
 更改以下参数，即可启动爬取：
